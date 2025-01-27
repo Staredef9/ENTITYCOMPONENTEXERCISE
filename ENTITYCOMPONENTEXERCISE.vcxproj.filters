@@ -45,6 +45,9 @@
     <ClCompile Include="EntityManager\game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="configParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.hpp">

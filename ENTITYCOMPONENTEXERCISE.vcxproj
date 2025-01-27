@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="configParser.cpp" />
     <ClCompile Include="EntityManager\Entity\entities.cpp" />
     <ClCompile Include="EntityManager\Entity\Component\component.cpp" />
     <ClCompile Include="EntityManager\game.cpp" />

@@ -1,13 +1,28 @@
 #pragma once
 
+
+template<typename T>
 class Vec2f {
 
 public:
-	float x;
-	float y;
+	T x, y;
 
-	Vec2f(float Ex, float Ey) { x = Ex, y = Ey; };
+	Vec2f(T Ex, T Ey) { x = Ex, y = Ey; };
+	~Vec2() {};
 
-	float& operator[](int i);
-	const float& operator[](int i) const;
+	bool operator==(Vec2f compared);
+	bool operator!=(Vec2f compared);
+
+
+	Vec2f<t> operator+(Vec2f<t> toAdd);
+	Vec2f<t> operator-(Vec2f<t> toAdd);
+	Vec2f<t> operator*(Vec2f<t> toAdd);
+	Vec2f<t> operator/(Vec2f<t> toAdd);
+
+	void	normalize();
+	float	length();
+
+//implementa gli operator ovverload 
+
 };
+
